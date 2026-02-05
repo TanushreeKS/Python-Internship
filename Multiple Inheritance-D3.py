@@ -1,4 +1,4 @@
-#Multiple Inheritance
+#Multiple Inheritance branch
 # Parent Class 1
 class Camera:
     def __init__(self, camera_quality):

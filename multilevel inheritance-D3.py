@@ -9,7 +9,6 @@ class Product:
         print("Product Name:", self.product_name)
         print("Price:", self.price)
 
-
 # Child Class
 class ElectronicProduct(Product):
     def __init__(self, product_name, price, brand, warranty):
