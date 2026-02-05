@@ -1,4 +1,4 @@
-#multilevel inheritance
+#multilevel inheritances
 # Parent Class
 class Product:
     def __init__(self, product_name, price):
