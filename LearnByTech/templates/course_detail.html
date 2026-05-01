@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>{{ course.title }}</h2>
+<p>{{ course.description }}</p>
+
+<h3>Videos:</h3>
+
+<ul>
+    {% for video in course.videos %}
+        <li>
+            {{ video.title }} -
+            <a href="{{ video.url }}" target="_blank">Watch</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="/">Home</a>
+
+</body>
+</html>

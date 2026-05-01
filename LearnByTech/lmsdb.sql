@@ -1,0 +1,9 @@
+CREATE DATABASE lmsdb;
+DROP DATABASE lmsdb;
+ALTER TABLE video ADD COLUMN course_id INT;
+ALTER TABLE user ADD COLUMN role VARCHAR(20);
+SELECT * FROM user;
+SELECT * FROM course;
+SELECT * FROM video;
+SELECT * FROM enrollment;
+SELECT * FROM user;

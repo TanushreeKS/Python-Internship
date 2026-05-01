@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>My Courses</h2>
+
+{% for e in enrollments %}
+    <div class="card">
+        <a href="/course/{{ e.course_id }}">
+            View Course {{ e.course_id }}
+        </a>
+    </div>
+{% endfor %}
+
+{% endblock %}

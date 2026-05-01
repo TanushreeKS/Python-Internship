@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LMS</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            background: #f5f7fb;
+        }
+
+        /* 🔥 SIDEBAR */
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #cbd5f5;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background: #334155;
+        }
+
+        /* 🔥 MAIN CONTENT */
+        .main {
+            margin-left: 240px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* 🔥 CARD DESIGN */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* 🔥 BUTTON */
+        .btn {
+            background: #3b82f6;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔥 SIDEBAR -->
+<div class="sidebar">
+    <h2>LMS</h2>
+    <a href="/">🏠 Home</a>
+    <a href="/dashboard">📊 Dashboard</a>
+    <a href="/courses">📚 Courses</a>
+    <a href="/videos">🎥 Videos</a>
+    <a href="/logout">🚪 Logout</a>
+</div>
+
+<!-- 🔥 MAIN CONTENT -->
+<div class="main">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Teacher Dashboard</h2>
+
+<a class="btn" href="/course/add">+ Add Course</a>
+
+{% for course in courses %}
+    <div class="card">
+        <h3>{{ course.title }}</h3>
+        <p>{{ course.description }}</p>
+    </div>
+{% endfor %}
+
+{% endblock %}
